@@ -13,7 +13,7 @@
         state: present
       with_items:
         - "build-essential"
-        - "python-dev"
+        - "python3-dev"
 
     # we need to download and install manually the lib because the pypi package is not up to date.
     # see https://github.com/adafruit/Adafruit_Python_DHT/issues/77
