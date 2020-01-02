@@ -23,6 +23,6 @@
         dest: "/tmp/Adafruit_Python_DHT"
 
     - name: "Install Adafruit python lib"
-      shell: "python setup.py install"
+      shell: "python3 setup.py install"
       args:
         chdir: "/tmp/Adafruit_Python_DHT"
