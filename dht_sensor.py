@@ -1,5 +1,4 @@
 import logging
-
 from kalliope.core.NeuronModule import NeuronModule, MissingParameterException, InvalidParameterException
 import Adafruit_DHT
 
@@ -11,7 +10,6 @@ supported_sensor = {
     'DHT22': Adafruit_DHT.DHT22,
     'AM2302': Adafruit_DHT.AM2302
 }
-
 
 class Dht_sensor(NeuronModule):
     def __init__(self, **kwargs):
@@ -57,5 +55,4 @@ class Dht_sensor(NeuronModule):
             self.pin = int(self.pin)
         except ValueError:
             raise InvalidParameterException("pin must be a valid integer")
-
         return True
