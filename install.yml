@@ -15,7 +15,6 @@
         - "python3-dev"
 
     # we need to download and install manually the lib because the pypi package is not up to date.
-    # see https://github.com/adafruit/Adafruit_Python_DHT/issues/77
     - name: "install Adafruit_dht for dependence"
       shell: "sudo pip3 Adafruit_dht"
 
