@@ -56,3 +56,5 @@ Kalliope would answer for example "The temperature is 23.5 degres with 37 percen
 > **Note:** This neuron can take a while to execute. The module will attempt to read
     multiple times (up to 15) until a good reading can be
     found. If a good reading cannot be found. The delay between retries is 2 seconds
+  **Note:** This neuron requires python3, python3-dev and build-essential
+   
