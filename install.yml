@@ -8,5 +8,5 @@
   tasks:
     - name: "Install pip dependencies"
       pip:
-        name: "Adafruit_Python_DHT"
+        name: "Adafruit_DHT"
         executable: pip3
