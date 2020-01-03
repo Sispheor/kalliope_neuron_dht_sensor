@@ -7,22 +7,5 @@
 
   tasks:
 
-    - name: "Install required packages"
-      apt:
-        name: "{{ item }}"
-        state: present
-      with_items:
-        - "build-essential"
-        - "python-dev"
-
-    # we need to download and install manually the lib because the pypi package is not up to date.
-    # see https://github.com/adafruit/Adafruit_Python_DHT/issues/77
-    - name: "Clone Adafruit python lib project"
-      git:
-        repo: "https://github.com/adafruit/Adafruit_Python_DHT.git"
-        dest: "/tmp/Adafruit_Python_DHT"
-
     - name: "Install Adafruit python lib"
-      shell: "python setup.py install"
-      args:
-        chdir: "/tmp/Adafruit_Python_DHT"
+      shell: "pip3 install Adafruit_Python_DHT"

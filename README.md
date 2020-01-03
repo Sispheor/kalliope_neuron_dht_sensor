@@ -5,6 +5,7 @@
 Get temperature and humidity from DHT series of humidity and temperature sensors.
 
 Supported sensors are:
+
 - DHT11
 - DHT22
 - AM2302
