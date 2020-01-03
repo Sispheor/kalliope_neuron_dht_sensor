@@ -6,6 +6,7 @@
   become: True
 
   tasks:
-
-    - name: "Install Adafruit python lib"
-      shell: "pip3 install Adafruit_Python_DHT"
+    - name: "Install pip dependencies"
+      pip:
+        name: "Adafruit_Python_DHT"
+        executable: pip3
